@@ -1,3 +1,6 @@
+# This project is a customization of react-datepicker2 
+
+
 # React DatePicker2
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
