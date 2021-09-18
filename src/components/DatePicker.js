@@ -46,7 +46,9 @@ export default class DatePicker extends Component {
     disableYearSelector: PropTypes.bool,
     inputProps: PropTypes.object,
     inputVariant: PropTypes.string,
-    InputAdornmentProps: PropTypes.object
+    InputAdornmentProps: PropTypes.object,
+    error:PropTypes.bool,
+    helperText:PropTypes.string
   };
 
   static defaultProps = {
@@ -60,7 +62,8 @@ export default class DatePicker extends Component {
     persianDigits: true,
     setTodayOnBlur: true,
     disableYearSelector: false,
-    inputProps: {}
+    inputProps: {},
+    error:false
   };
 
   constructor(props) {
@@ -329,6 +332,8 @@ export default class DatePicker extends Component {
           InputProps={this.props.inputProps}
           variant={this.props.inputVariant}
           InputAdornmentProps={this.props.InputAdornmentProps}
+          error={this.props.error}
+          helperText={this.props.helperText}
         />
       </div>
     );
